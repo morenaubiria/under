@@ -54,10 +54,6 @@ footer h2{font-size:45px;margin-bottom:25px}
 footer input{width:300px}
 
 @media(max-width:900px){
-  nav{display:none}
-  .hero h1{font-size:45px}
-  .artistas,.shop{grid-template-columns:1fr}
-  .evento{grid-template-columns:1fr}@media(max-width:900px){
 
   header{
     height:auto;
@@ -73,6 +69,25 @@ footer input{width:300px}
     align-items:center;
   }
 
+  .hero h1{
+    font-size:45px;
+  }
+
+  .artistas,
+  .shop{
+    grid-template-columns:1fr;
+  }
+
+  .evento{
+    grid-template-columns:1fr;
+  }
+
+  .evento img{
+    width:100%;
+  }
+
+  form{
+    grid-template-columns:1fr;
+  }
+
 }
-  .evento img{width:100%}
-  form{grid-template-columns:1fr}
