@@ -54,7 +54,25 @@ footer h2{font-size:45px;margin-bottom:25px}
 footer input{width:300px}
 
 @media(max-width:900px){
-  nav{display:none}
+  header{
+    height:auto;
+    padding:20px 9%;
+    flex-direction:column;
+    gap:20px;
+  }
+
+  nav{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+  }
+
+  .hero h1{font-size:45px}
+  .artistas,.shop{grid-template-columns:1fr}
+  .evento{grid-template-columns:1fr}
+  .evento img{width:100%}
+  form{grid-template-columns:1fr}
+}
   .hero h1{font-size:45px}
   .artistas,.shop{grid-template-columns:1fr}
   .evento{grid-template-columns:1fr}
