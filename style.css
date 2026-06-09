@@ -1,0 +1,64 @@
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#000;color:white;font-family:Arial,Helvetica,sans-serif}
+span{color:#00ff84}
+
+header{
+  height:90px;padding:0 9%;display:flex;justify-content:space-between;align-items:center;
+  background:#050505;border-bottom:1px solid #1d1d1d;position:sticky;top:0;z-index:10
+}
+.logo{font-size:26px}
+nav{display:flex;gap:35px;align-items:center}
+nav a{color:#aaa;text-decoration:none;font-size:14px}
+.btn-nav,.btn,button{background:#00ff84;color:#000!important;padding:18px 30px;text-decoration:none;border:none;font-size:15px;letter-spacing:1px}
+.hero{
+  min-height:85vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;
+  background:radial-gradient(circle,#111 0%,#000 70%)
+}
+.hero h1{font-size:78px;line-height:1.1;font-weight:900}
+.hero p,.sub{color:#9a9a9a;font-size:21px;margin:30px 0;letter-spacing:1px}
+.btn-outline{border:1px solid #555;color:white;text-decoration:none;padding:18px 30px;margin-left:15px}
+
+.section{padding:80px 9%}
+.section h2{font-size:58px;margin-bottom:20px}
+.grid{display:grid;gap:28px;margin-top:60px}
+.artistas{grid-template-columns:repeat(3,1fr)}
+.card{height:470px;position:relative;overflow:hidden;background:#111}
+.card img{width:100%;height:100%;object-fit:cover;filter:brightness(.6)}
+.card h3,.card p{position:relative;bottom:90px;left:25px}
+.card p{color:#00ff84;margin-top:10px}
+
+.eventos{background:#1a1a1a}
+.evento{display:grid;grid-template-columns:420px 1fr;background:#000;margin:35px 0;border:1px solid #111}
+.evento img{width:420px;height:420px;object-fit:cover}
+.evento div{padding:45px}
+.evento h3{font-size:34px}
+.evento p{color:#999;margin:15px 0}
+.precio{color:#00ff84!important;font-size:28px!important;margin-top:160px!important}
+
+.shop{grid-template-columns:repeat(4,1fr)}
+.producto{border:1px solid #333;background:#1b1b1b;padding-bottom:25px}
+.producto img{width:100%;height:300px;object-fit:contain;background:#000}
+.producto p,.producto h3,.producto span{margin-left:18px}
+.producto p{color:#00ff84;margin-top:18px}
+.producto h3{margin:12px 18px}
+.producto span{font-size:24px}
+
+.promo{text-align:center;background:#1a1a1a}
+form{background:#000;max-width:850px;margin:50px auto;padding:35px;display:grid;grid-template-columns:1fr 1fr;gap:25px}
+input,select,textarea{background:#1b1b1b;border:1px solid #333;color:white;padding:18px;font-size:16px}
+textarea{grid-column:1/3;height:140px}
+form button{grid-column:1/3}
+
+footer{text-align:center;padding:80px;background:#000;border-top:1px solid #222}
+footer h2{font-size:45px;margin-bottom:25px}
+footer input{width:300px}
+
+@media(max-width:900px){
+  nav{display:none}
+  .hero h1{font-size:45px}
+  .artistas,.shop{grid-template-columns:1fr}
+  .evento{grid-template-columns:1fr}
+  .evento img{width:100%}
+  form{grid-template-columns:1fr}
+  textarea,form button{grid-column:1}
+}
